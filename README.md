@@ -1,4 +1,4 @@
-# WorPpress behind Traefik 2
+# WordPress behind Traefik
 
 Hello everyone, I created this repository to show you how to run **WordPress** with **Traefik** as a **reverse-proxy**. This will let you have a **SSL certificate** on your **self-hosted** instance.
 
