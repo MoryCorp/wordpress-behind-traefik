@@ -2,7 +2,7 @@
 
 Hello everyone, I created this repository to show you how to run **WordPress** with **Traefik** as a **reverse-proxy**. This will let you have a **SSL certificate** on your **self-hosted** instance.
 
-> If you want to host your **WordPress** instance but you don't have a Traefik container yet, you can use this repository that I have created and tested with **WordPress** and other services : https://github.com/MoryCorp/traefik2-minimalist-configuration
+> If you want to host your **WordPress** instance but you don't have a Traefik container yet, you can use this repository that I have created and tested with **WordPress** and other services : https://github.com/MoryCorp/traefik-minimalist-configuration
 
 ## Edit docker-compose.yml
 
@@ -16,3 +16,5 @@ The networks are configured so that only the **Wordpress** instance is exposed v
 
 When deploying my **WordPress** instance I also needed to be able to easily view and edit my database.   
 So I added a **phpMyAdmin** instance. The latter is optional and can be completely removed or commented out if you don't need it.
+
+Note : if you decide to use **phpMyAdmin** do not forget to also edit line 47 of docker-compose.yml to set the subdomain of your **phpMyAdmin** instance
