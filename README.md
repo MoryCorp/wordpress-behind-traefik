@@ -17,4 +17,6 @@ The networks are configured so that only the **Wordpress** instance is exposed v
 When deploying my **WordPress** instance I also needed to be able to easily view and edit my database.   
 So I added a **phpMyAdmin** instance. The latter is optional and can be completely removed or commented out if you don't need it.
 
-Note : if you decide to use **phpMyAdmin** do not forget to also edit line 47 of docker-compose.yml to set the subdomain of your **phpMyAdmin** instance
+Note : if you decide to use **phpMyAdmin** do not forget to also edit line 48 of docker-compose.yml to set the subdomain of your **phpMyAdmin** instance :
+
+``- traefik.http.routers.pma.rule=Host(`pma.yourdomain.com`)``
