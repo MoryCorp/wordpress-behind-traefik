@@ -8,7 +8,7 @@ Hello everyone, I created this repository to show you how to run **WordPress** w
 
 This configuration assumes that you already have a Traefik instance configured with an **entrypoint** named **"websecure"** on port **443**.
 
-If this is the case, the only thing you will have to edit is **line 37** of the docker-compose.yml file, to put your domain name or sub-domain instead of "yourdomain.com" AND the .env file to change passwords etc.
+If this is the case, the only thing you will have to edit is **line 30** of the docker-compose.yml file, to put your domain name or sub-domain instead of "yourdomain.com" AND the .env file to change passwords etc.
 
 The networks are configured so that only the **Wordpress** instance is exposed via Traefik. **Databases are not exposed** thanks to the "internal" network which is set to "external: false".
 
